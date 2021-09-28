@@ -6,11 +6,11 @@ function myFunction() {
     var currentDate = new Date(); /* creating the date*/
     var hour = currentDate.getHours(); /*uses local time according to MDN*/
     var min = currentDate.getMinutes();
-    var sec = currentDate.getSeconds();
+    
 
     hour = changeTime(hour);
     min = changeTime(min);
-    sec = changeTime(sec);
+    
   }
 
   function changeTime(i) {
@@ -21,7 +21,7 @@ function myFunction() {
       return i
     }
   }
-  var digitalClock = hour + " : " + min + " : " + sec
+  var digitalClock = hour + " : " + min
 
   document.getElementById("time").innerHTML = digitalClock; /* adding to the html div.  this part took me the longest to figure out */
 }
